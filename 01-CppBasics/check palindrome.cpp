@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int main()
 {
   int x;
-  printf("Enter any number:");
-  scanf("%d",&x);
+  cout<<"Enter any number:";
+  cin>>x;
   int temp=x,r,sum=0;
   while(x!=0)
   {
@@ -12,9 +13,9 @@ int main()
     x=x/10;
   }
   if(temp==sum)
-  printf("Yes it is a palindrome");
+  cout<<"Yes it is a palindrome";
   else
-  printf("No it is not a plaindrome");
+  cout<<"No it is not a plaindrome";
   
   return 0;
 }
